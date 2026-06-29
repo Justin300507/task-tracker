@@ -1,0 +1,47 @@
+{
+  "decisions": [
+    {
+      "agent": "product_manager",
+      "decision": "product_spec_created",
+      "rationale": "Simple, collaborative to\u2011do list for individuals and teams",
+      "data": {
+        "features": 8,
+        "user_stories": 9,
+        "must_have": [
+          "Task CRUD",
+          "Project & Tag Organization",
+          "Collaboration & Permissions"
+        ]
+      }
+    },
+    {
+      "agent": "architect",
+      "decision": "architecture_created",
+      "rationale": "27 endpoints across 7 files",
+      "data": {
+        "endpoints": 27
+      }
+    },
+    {
+      "agent": "tech_lead",
+      "decision": "constraints_set",
+      "rationale": "The proposed architecture covers most core CRUD operations and follows the FastAPI conventions, but it is missing several mandatory endpoints (auth, s",
+      "data": {
+        "critical_issues": 4,
+        "auth_endpoints": 28,
+        "pagination_required": 5
+      }
+    },
+    {
+      "agent": "orchestrator",
+      "decision": "pipeline_complete",
+      "rationale": "V6 score: 79/100",
+      "data": {
+        "total_time": 23.02,
+        "can_export": true
+      }
+    }
+  ],
+  "conflicts": [],
+  "shared_context_keys": []
+}
